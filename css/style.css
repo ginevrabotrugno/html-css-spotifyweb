@@ -1,4 +1,7 @@
-/* REGOLE GENERALI */
+/******************************************************************************
+ REGOLE GENERALI
+*******************************************************************************/
+
 
 * {
     margin: 0;
@@ -8,36 +11,135 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    color: #ffffff;
 }
 
-/* REGOLE MAIN */
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/******************************************************************************
+ REGOLE MAIN 
+*******************************************************************************/
 
 #wrapper {
     height: calc(100vh - 100px);
-    background-color: blueviolet;
+    background-color: #141922;
     display: flex;
 }
 
-.side-menu {
-    width: 200px;
 
-    /* debug */
+/* REGOLE SIDE-MENU */
+
+.side-menu {
+    width: 250px;
+    background-color: #000000;
     height: 100%;
-    background-color: blue;
+    position: relative;
 }
+
+.logo {
+    width: 60%;
+    margin: 20px 20px 0;
+}
+
+.menu {
+    margin-top: 20px;
+    line-height: 2;
+    font-size: small;
+}
+
+h3.white {
+    color: white;
+    padding: 0 20px;
+}
+
+.side-menu li {
+    padding: 0 20px;
+    color: #a3a3a3;
+}
+
+.side-menu i {
+    margin-right: 10px;
+}
+
+.fa-solid.fa-plus {
+    color: #000000;
+    background-color: #a3a3a3;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.scroll {
+    max-height: 20vh;
+    overflow-y: auto;
+}
+
+#add {
+    margin: 20px;
+}
+
+#active {
+    color: white;
+    border-left: 3px solid #adff2f;
+    padding: 0 17px;
+}
+
+#avatar {
+    color: white;
+    margin: 20px;
+    padding: 10px 0;
+    border-top: solid 1px #808080;
+}
+
+#avatar img {
+    width: 25px;
+    height: 25px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+#avatar span{
+    font-weight: 800;
+    display: inline-block;
+    height: 25px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.menu.bottom {
+    width: calc(100% - 20px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
+}
+
+/* REGOLE LIBRARY */
 
 .library {
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     overflow-y: auto;
-
-    /* debug */
-    height: 100%;
-    background-color: yellow;
-
 }
+
+
+
+
+/* REGOLE PLAY-BAR */
 
 #play-bar {
     height: 100px;
     width: 100%;
-    background-color: red;
+    background-color: #282828;
+    z-index: 900;
 }
