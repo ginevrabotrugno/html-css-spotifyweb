@@ -89,7 +89,7 @@ h3.white {
     margin: 20px;
 }
 
-#active {
+.side-menu .active {
     color: white;
     border-left: 3px solid #adff2f;
     padding: 0 17px;
@@ -132,8 +132,46 @@ h3.white {
     overflow-y: auto;
 }
 
+.upgrade {
+    width: calc(100% - 250px);
+    z-index: 900;
+    height: 80px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 
+.button {
+    font-size: small;
+    padding: 10px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
 
+.library nav {
+    padding-top: 80px;
+    color: #a3a3a3;
+}
+
+.library ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.library .active::after {
+    content: "";  
+    display: block;  
+    margin: 0 auto; 
+    width: 50%;
+    border-bottom: 2px solid #adff2f; 
+} 
 
 /* REGOLE PLAY-BAR */
 
