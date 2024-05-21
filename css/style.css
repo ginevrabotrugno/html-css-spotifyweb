@@ -81,7 +81,7 @@ h3.white {
 }
 
 .scroll {
-    max-height: 20vh;
+    height: 25vh;
     overflow-y: auto;
 }
 
@@ -97,7 +97,7 @@ h3.white {
 
 #avatar {
     color: white;
-    margin: 20px;
+    margin: 20px 20px 0;
     padding: 10px 0;
     border-top: solid 1px #808080;
 }
@@ -141,5 +141,8 @@ h3.white {
     height: 100px;
     width: 100%;
     background-color: #282828;
-    z-index: 900;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
