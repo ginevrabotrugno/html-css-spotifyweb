@@ -346,12 +346,9 @@ section {
     color: #ffffff;
 } 
 
-.white-bar:hover {
+.grey-bar:hover .white-bar {
     background-color: #adff2f;
-    opacity: 1;
 }
-
-
 
 .white-bar .fa-circle {
     position: absolute;
@@ -360,6 +357,6 @@ section {
     display: none;
 }
 
-.white-bar:hover .fa-circle {
+.grey-bar:hover .fa-circle {
     display: inline-block;
 }
