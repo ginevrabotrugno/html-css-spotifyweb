@@ -342,3 +342,7 @@ section {
 .button:hover, #play-bar .fa-circle-play:hover {
     transform: scale(1.2);
 }
+
+.menu li:hover, #play-bar .subtitle:hover, .icons.side i:hover {
+    color: #ffffff;
+} 
