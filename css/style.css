@@ -283,8 +283,7 @@ section {
     position: relative;
 }
 
-.grey-bar::before {
-    content: "";
+.white-bar {
     display: inline-block;
     width: 20%;
     height: 3px;
@@ -346,3 +345,21 @@ section {
 .menu li:hover, #play-bar .subtitle:hover, .icons.side i:hover {
     color: #ffffff;
 } 
+
+.white-bar:hover {
+    background-color: #adff2f;
+    opacity: 1;
+}
+
+
+
+.white-bar .fa-circle {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    display: none;
+}
+
+.white-bar:hover .fa-circle {
+    display: inline-block;
+}
