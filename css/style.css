@@ -303,3 +303,38 @@ section {
 .col-25 .down-tools {
     justify-content: flex-end;
 }
+
+/******************************************************************************
+ REGOLE HOVER
+*******************************************************************************/
+.library .cover {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.circle .overlay {
+    border-radius: 50%;
+}
+
+.overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
