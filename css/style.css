@@ -36,6 +36,7 @@ a {
     height: calc(100vh - 80px);
     background-color: #141922;
     display: flex;
+    overflow: hidden;
 }
 
 
@@ -43,7 +44,7 @@ a {
 
 .side-menu {
     width: 200px;
-    height: 100%;
+    min-height: 500px;
     background-color: #000000;
     position: relative;
 }
