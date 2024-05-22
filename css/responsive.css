@@ -45,3 +45,39 @@
         gap: 5px;
     }
 }
+
+
+/* VIEW XS */
+
+@media screen and (max-width:480px) {
+
+    .side-menu span, #logo-big, #avatar span, .menu.playlist {
+        display: none;
+    }
+
+    .side-menu {
+        width: 50px;
+    }
+    
+    #avatar {
+        border-top: 0;
+    }
+
+    #avatar img {
+        margin-left: -5px;
+    }
+
+    #logo-small {
+        display: block;
+        width: 25px;
+        margin: 0;
+    }
+
+    .library {
+        width: calc(100% - 50px);
+    }
+
+    .upgrade {
+        width: calc(100% - 50px)
+    }
+}
