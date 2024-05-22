@@ -1,0 +1,47 @@
+/* VIEW MD */
+
+@media screen and (max-width:768px) {
+
+    #wrapper .row {
+        flex-wrap: wrap;
+    }
+
+    .library .col {
+        width: calc((100% / 4) - 20px);
+    }
+    
+}
+
+
+/* VIEW S */
+
+@media screen and (max-width:576px) {
+
+    .library .col {
+        width: calc(50% - 20px);
+    }
+    
+    #play-bar .col-25 {
+        width: calc((100% / 3) - 20px);
+    }
+
+    .col-50 {
+        width: calc((100% / 3) - 20px);
+    }
+
+    .icons {
+        font-size: 15px;
+    }
+
+    .up-tools .icons {
+        padding: 5px;
+    }
+
+    #play {
+        font-size: 20px;
+    }
+
+    .down-tools {
+        gap: 5px;
+    }
+}
